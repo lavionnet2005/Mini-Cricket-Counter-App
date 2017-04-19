@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MiniCricketCounterApp</string>
+    <string name="title">Score Board</string>
+    <string name="teamA">Team A</string>
+    <string name="teamB">Team B</string>
+    <string name ="reset">Reset</string>
+    <string name="four">Four-4</string>
+    <string name="six">Six-6</string>
+    <string name="one">Single-1</string>
+    <string name="out">OUT</string>
+    <string name="toss">Toss</string>
+    <string name="total">Balls: 6 \nTotal: 0</string>
+</resources>

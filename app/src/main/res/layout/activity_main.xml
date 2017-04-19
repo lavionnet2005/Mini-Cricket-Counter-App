@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.minicricketcounterapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_teamA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/teamA"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <Button
+                android:id="@+id/single_teamA"
+                style="@style/CustomButtonStyle"
+                android:text="@string/one"
+                android:onClick="singleRun"/>
+
+            <Button
+                android:id="@+id/four_teamA"
+                style="@style/CustomButtonStyle"
+                android:text="@string/four"
+                android:onClick="fourRuns"/>
+
+            <Button
+                android:id="@+id/six_teamA"
+                style="@style/CustomButtonStyle"
+                android:text="@string/six"
+                android:onClick="sixRuns"/>
+
+            <Button
+                android:id="@+id/out_teamA"
+                style="@style/CustomButtonStyle"
+                android:text="@string/out"
+                android:onClick="out"/>
+
+            <TextView
+                android:id="@+id/score_teamA"
+                style="@style/CustomButtonStyle"
+                android:text="@string/total"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:id = "@+id/linear_layout_teamB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/teamB"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            <Button
+                android:id="@+id/single_teamB"
+                style="@style/CustomButtonStyle"
+                android:text="@string/one"
+                android:onClick="singleRun"/>
+
+            <Button
+                android:id="@+id/four_teamB"
+                style="@style/CustomButtonStyle"
+                android:text="@string/four"
+                android:onClick="fourRuns"/>
+
+            <Button
+                android:id="@+id/six_teamB"
+                style="@style/CustomButtonStyle"
+                android:text="@string/six"
+                android:onClick="sixRuns"/>
+
+            <Button
+                android:id="@+id/out_teamB"
+                style="@style/CustomButtonStyle"
+                android:text="@string/out"
+                android:onClick="out"/>
+
+            <TextView
+                android:id = "@+id/score_teamB"
+                style="@style/CustomButtonStyle"
+                android:text="@string/total"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetAll"
+        android:text="@string/reset"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <Button
+        android:onClick="toss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text ="@string/toss"
+        android:layout_above="@id/reset"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
